@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game Background</title>
+    <title>Survey</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body, html {
@@ -17,7 +17,7 @@
             left: 0;
             width: 100vw;
             height: 100vh;
-            z-index: -1; /* Ensures the canvas is behind the form */
+            z-index: -1; 
         }
         .form-container {
             position: relative;
@@ -38,7 +38,7 @@
     <canvas id="gameCanvas"></canvas>
     <div class="form-container bg-transparent flex items-center justify-center min-h-screen">
         <div class="bg-white bg-opacity-80 p-8 rounded-xl shadow-lg w-full max-w-md">
-            <h1 class="text-2xl font-bold mb-6 text-center text-gray-800">User Survey</h1>
+            <h1 class="text-2xl font-bold mb-6 text-center text-gray-800">Survey</h1>
             <form id="surveyForm" class="space-y-4" onsubmit="handleSubmit(event)">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <div class="small-text">Playable snake game</div>
+    <div class="big-text">Playable snake game</div>
 
     <script>
         const canvas = document.getElementById("gameCanvas");
@@ -163,5 +163,6 @@
             resultMessage.classList.remove('hidden');
         }
     </script>
+     
 </body>
 </html>
